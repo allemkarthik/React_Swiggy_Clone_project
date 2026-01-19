@@ -1,22 +1,22 @@
-import './index.css';
+import "./index.css";
 
 import React, { useEffect, useState, lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/pages/Header.jsx";
 import Body from "./components/Body.jsx";
 import { createHashRouter, RouterProvider, Outlet } from "react-router-dom";
-import About from "./components/pages/About.jsx";
+
 import Contact from "./components/pages/Contact.jsx";
 import Error from "./components/Error.jsx";
 import RestaurantMenu from "./components/ResturantMenu.jsx";
 import Shimmer from "./components/Shimmer.jsx";
-import userContext from './utils/hooks/userContext.jsx';
-import Cart from './components/pages/Cart.jsx';
-import appStore from './utils/store/appStore.jsx';
-import { Provider } from 'react-redux';
+import userContext from "./utils/hooks/userContext.jsx";
+import Cart from "./components/pages/Cart.jsx";
+import appStore from "./utils/store/appStore.jsx";
+import { Provider } from "react-redux";
+const Search = lazy(() => import("./components/pages/Search.jsx"));
 
 const Grocery = lazy(() => import("./components/pages/Grocery.jsx"));
-
 
 const Applayout = () => {
   const [userName, setUserName] = useState();
@@ -44,14 +44,22 @@ const appRouter = createHashRouter([
     element: <Applayout />,
     children: [
       { path: "/", element: <Body /> },
-      { path: "/about", element: <About /> },
+
       { path: "/contact", element: <Contact /> },
-      { path: "/cart", element: <Cart/>},
+      { path: "/cart", element: <Cart /> },
       {
         path: "/grocery",
         element: (
           <Suspense fallback={<Shimmer />}>
             <Grocery />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/search",
+        element: (
+          <Suspense fallback={<Shimmer />}>
+            <Search />
           </Suspense>
         ),
       },
