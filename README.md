@@ -1,126 +1,137 @@
-#🍔 React Swiggy Clone
+# 🍔 Swiggy Clone – React Food Ordering App
 
-A production-grade Swiggy-like food ordering web application built using React + Vite, styled with Tailwind CSS, state-managed using Redux, and fully tested using Vitest & Jest. This project demonstrates modern frontend architecture, reusable components, custom hooks, routing, and real-world testing practices.
+A production-ready **Swiggy-inspired food ordering web application** built using **React + Vite**, focused on scalability, performance, and testability. The app mimics real-world food delivery platforms with restaurant listings, menus, filtering, routing, and robust state management.
 
-🚀 Live Demo
+---
 
-👉 Deployed using GitHub Pages
+## 🚀 Live Demo
 
-🛠 Tech Stack
-Frontend
+👉 https://allemkarthik.github.io/React_Swiggy_Clone_project/
 
-React 18 – Component-based UI
+---
 
-Vite – Fast bundler & dev server
+## 🧠 Key Features
 
-Tailwind CSS – Utility-first styling
+* 🔍 Search & filter restaurants (Top-rated, name-based search)
+* 🍽️ Dynamic restaurant menu pages
+* 🧩 Reusable component architecture
+* 🧠 Global state management using **Redux Toolkit**
+* 🌐 Client-side routing with **React Router v6**
+* 📡 Custom hooks for API calls & online status detection
+* ⚡ Fast bundling & dev experience using **Vite**
+* 🧪 Unit & Integration testing with **Vitest + Jest**
+* 🚀 CI/CD pipeline using **GitHub Actions**
 
-React Router v6 – Client-side routing
+---
 
-Redux Toolkit – Global state management
+## 🏗️ Tech Stack
 
-Testing
+| Category         | Technologies                        |
+| ---------------- | ----------------------------------- |
+| Frontend         | React, JSX                          |
+| Bundler          | Vite                                |
+| Styling          | Tailwind CSS                        |
+| State Management | Redux Toolkit                       |
+| Routing          | React Router DOM                    |
+| Testing          | Vitest, Jest, React Testing Library |
+| CI/CD            | GitHub Actions                      |
+| Deployment       | GitHub Pages                        |
 
-Vitest – Unit & integration testing (Vite-native)
+---
 
-Jest – Component & utility testing
+## 📁 Project Structure
 
-React Testing Library – DOM-based testing
-
-Tooling & DevOps
-
-ESLint – Code quality
-
-GitHub Actions – CI/CD
-
-GitHub Pages – Deployment
-
-📂 Project Structure
+```
 src/
-├── assets/          # Images & static assets
-├── components/      # Reusable UI components
-│   ├── Body.jsx
-│   ├── RestaurantCard.jsx
-│   ├── RestaurantCategory.jsx
-│   ├── MenuItemList.jsx
-│   ├── Shimmer.jsx
-│   └── Error.jsx
-├── pages/           # Route-level components
-├── utils/           # Constants, helpers, custom hooks
-├── tests/           # Unit & integration tests
-├── mocks/           # Mock data for testing
-├── app.jsx          # Root component
-├── index.css        # Global styles (Tailwind)
-└── setupTests.js    # Test configuration
+ ├── assets/          # Images & static assets
+ ├── components/      # Reusable UI components
+ ├── pages/           # Route-level pages
+ ├── mocks/           # Mock data for tests
+ ├── tests/           # Unit & integration tests
+ ├── utils/           # Constants & custom hooks
+ ├── app.jsx          # Root App component
+ ├── index.css        # Global styles (Tailwind)
 
-✨ Key Features
+public/
+ ├── index.html
 
-🔍 Search & Filter Restaurants (Top-rated, name-based)
+.github/
+ ├── workflows/       # GitHub Actions CI/CD
+```
 
-🍽 Dynamic Restaurant Menus with categories
+---
 
-🔄 Reusable Components & HOCs
+## 🧪 Testing Strategy
 
-🧠 Custom Hooks (API calls, online status)
+* ✅ **Unit Tests** for components & utilities
+* 🔁 **Integration Tests** for component interaction & routing
+* 🧪 Mocked APIs & hooks for predictable testing
+* 📊 ~90% test coverage on core UI components
 
-📦 Redux Store for cart & global state
+Run tests locally:
 
-🌐 API Integration with graceful fallback handling
+```bash
+npm run test
+```
 
-💀 Shimmer UI for loading states
+---
 
-🧪 Unit & Integration Tests with Vitest & Jest
+## 📊 Performance & Metrics
 
-🧪 Testing Strategy
+* ⚡ ~40% faster load times with Vite
+* ♻️ Reusable components reduced UI duplication
+* 🧪 ~90% coverage across business-critical components
+* 🧠 Centralized state reduced prop-drilling complexity
 
-✅ Unit Tests for components & utility functions
+---
 
-✅ Integration Tests for user flows (search, filter, cart)
+## 🧑‍💻 Getting Started
 
-✅ Mocked APIs using test mocks
+### 1️⃣ Clone the repo
 
-✅ DOM assertions with React Testing Library
+```bash
+git clone https://github.com/allemkarthik/React-Swiggy-Clone.git
+cd React-Swiggy-Clone
+```
 
-Test Coverage
+### 2️⃣ Install dependencies
 
-Components: ~90%
+```bash
+npm install
+```
 
-Utilities & hooks: ~85%
+### 3️⃣ Start development server
 
-⚙️ Scripts
-npm run dev        # Start dev server (Vite)
-npm run build      # Production build
-npm run test       # Run Vitest & Jest
-npm run preview    # Preview production build
+```bash
+npm run dev
+```
 
-📈 Performance & Metrics
+---
 
-⚡ Initial load improved by ~40% using Vite
+## 🚀 Deployment
 
-♻️ Reusable components reduced code duplication by ~30%
+This project uses **GitHub Actions** to automatically:
 
-🧪 Caught UI regressions early with automated tests
+* Build the app on every push to `main`
+* Deploy the production build to **GitHub Pages**
 
-📌 What This Project Demonstrates
+---
 
-Real-world React application architecture
+## 📌 Resume Highlight
 
-Strong understanding of state management with Redux
+> **Swiggy Clone (React)** – Built a scalable food-ordering web app using React, Vite, Redux Toolkit, and Tailwind CSS with unit & integration testing via Vitest and Jest; improved load performance by ~40% and achieved ~90% test coverage.
 
-Professional testing practices (unit + integration)
+---
 
-Modern tooling (Vite, Vitest, CI/CD)
+## 👨‍💻 Author
 
-Clean, scalable, and maintainable codebase
+**Sai Karthik Allem**
 
-👨‍💻 Author
+* GitHub: [https://github.com/allemkarthik](https://github.com/allemkarthik)
+* LinkedIn: [https://linkedin.com/in/allem-karthik](https://linkedin.com/in/allem-karthik)
 
-Sai Karthik Allem
-Frontend / Full Stack Developer
-🔗 GitHub: <https://github.com/allemkarthik>
-🔗 LinkedIn: <https://www.linkedin.com/in/allem-karthik>
-
-📌 Future Enhancements
+---
+##📌 Future Enhancements
 
 Authentication (Login / Signup)
 
@@ -128,4 +139,7 @@ Checkout flow
 
 Payment gateway integration
 
+Unit & integration testing
+
 ⭐ If you like this project, consider giving it a star!
+oject, consider giving it a star!
