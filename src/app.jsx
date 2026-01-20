@@ -6,7 +6,6 @@ import Header from "./components/pages/Header.jsx";
 import Body from "./components/Body.jsx";
 import { createHashRouter, RouterProvider, Outlet } from "react-router-dom";
 
-import Contact from "./components/pages/Contact.jsx";
 import Error from "./components/Error.jsx";
 import RestaurantMenu from "./components/ResturantMenu.jsx";
 import Shimmer from "./components/Shimmer.jsx";
@@ -14,6 +13,7 @@ import userContext from "./utils/hooks/userContext.jsx";
 import Cart from "./components/pages/Cart.jsx";
 import appStore from "./utils/store/appStore.jsx";
 import { Provider } from "react-redux";
+const Help = lazy(() => import("./components/pages/Help.jsx"));
 const Search = lazy(() => import("./components/pages/Search.jsx"));
 
 const Grocery = lazy(() => import("./components/pages/Grocery.jsx"));
@@ -45,7 +45,14 @@ const appRouter = createHashRouter([
     children: [
       { path: "/", element: <Body /> },
 
-      { path: "/contact", element: <Contact /> },
+      {
+        path: "/help",
+        element: (
+          <Suspense fallback={<Shimmer />}>
+            <Help />
+          </Suspense>
+        ),
+      },
       { path: "/cart", element: <Cart /> },
       {
         path: "/grocery",
