@@ -1,5 +1,5 @@
 import "./index.css";
-
+import Footer from "./components/pages/Footer.jsx";
 import React, { useEffect, useState, lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/pages/Header.jsx";
@@ -32,6 +32,7 @@ const Applayout = () => {
         <div className="app">
           <Header />
           <Outlet />
+          <Footer/>
         </div>
       </userContext.Provider>
     </Provider>
