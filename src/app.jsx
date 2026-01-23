@@ -1,11 +1,10 @@
 import "./index.css";
-import Footer from "./components/pages/Footer.jsx";
+// import Footer from "./components/pages/Footer.jsx";
 import React, { useEffect, useState, lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/pages/Header.jsx";
 import Body from "./components/Body.jsx";
 import { createHashRouter, RouterProvider, Outlet } from "react-router-dom";
-
 import Error from "./components/Error.jsx";
 import RestaurantMenu from "./components/ResturantMenu.jsx";
 import Shimmer from "./components/Shimmer.jsx";
@@ -15,7 +14,7 @@ import appStore from "./utils/store/appStore.jsx";
 import { Provider } from "react-redux";
 const Help = lazy(() => import("./components/pages/Help.jsx"));
 const Search = lazy(() => import("./components/pages/Search.jsx"));
-
+const Footer = lazy(() => import("./components/pages/Footer.jsx"));
 const Grocery = lazy(() => import("./components/pages/Grocery.jsx"));
 
 const Applayout = () => {
@@ -32,7 +31,9 @@ const Applayout = () => {
         <div className="app">
           <Header />
           <Outlet />
-          <Footer/>
+          <Suspense>
+            <Footer />
+          </Suspense>
         </div>
       </userContext.Provider>
     </Provider>

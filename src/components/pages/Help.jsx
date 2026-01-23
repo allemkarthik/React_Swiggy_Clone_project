@@ -25,7 +25,7 @@ const Help = () => {
   };
 
   return (
-    <div className="mx-auto w-full md:w-[80%] lg:w-[81%]">
+    <div className="mx-auto w-full md:w-[80%] lg:w-[81%] py-10">
       
       <div className="py-10 text-xl font-black">
         <h1>Help & Support</h1>

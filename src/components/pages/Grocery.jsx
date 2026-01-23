@@ -1,6 +1,9 @@
 const Grocery=()=>{
     return(
-        <h1>this is grocery component</h1>
+       <div>
+         <h1>this is grocery component</h1>
+        <h2>currently working on Instamart Api</h2>
+       </div>
     )
 }
 
