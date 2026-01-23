@@ -1,0 +1,1 @@
+import{j as r}from"./index-D7hFNGS6.js";const s=()=>r.jsxs("div",{children:[r.jsx("h1",{children:"this is grocery component"}),r.jsx("h2",{children:"currently working on Instamart Api"})]});export{s as default};
