@@ -1,4 +1,4 @@
-import{j as s}from"./index-D7hFNGS6.js";const e=()=>s.jsx("footer",{className:"bg-gray-200",children:s.jsxs("div",{className:`\r
+import{j as s}from"./index-BmUQBI3y.js";const e=()=>s.jsx("footer",{className:"bg-gray-200",children:s.jsxs("div",{className:`\r
           mx-auto\r
           w-full\r
           px-4\r
